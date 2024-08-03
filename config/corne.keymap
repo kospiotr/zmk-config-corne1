@@ -114,19 +114,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL   &kp AT    &kp HASH  &kp DLLR                                 &kp PRCNT                      &kp COLON  &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &trans         &trans
-&kp LCTRL  &kp CARET  &kp AMPS  &kp PIPE  &pht LEFT_PARENTHESIS RIGHT_PARENTHESIS  &pht LEFT_BRACE RIGHT_BRACE    &as MINUS  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
-&kp LSHFT  &kp TILDE  &trans    &trans    &pht LEFT_BRACKET RBKT                   &pht LESS_THAN GREATER_THAN    &kp EQUAL  &kp END   &trans          &kp PAGE_DOWN  &kp BACKSLASH  &trans
-                                &trans    &trans                                   &trans                         &trans     &trans    &trans
+&kp TAB           &kp EXCL   &kp AT    &kp HASH  &kp DLLR                                 &kp PRCNT                      &kp COLON  &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &trans         &trans
+&kp LEFT_SHIFT    &kp CARET  &kp AMPS  &kp PIPE  &pht LEFT_PARENTHESIS RIGHT_PARENTHESIS  &pht LEFT_BRACE RIGHT_BRACE    &as MINUS  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
+&kp LEFT_CONTROL  &kp TILDE  &trans    &trans    &pht LEFT_BRACKET RBKT                   &pht LESS_THAN GREATER_THAN    &kp EQUAL  &kp END   &trans          &kp PAGE_DOWN  &kp BACKSLASH  &trans
+                                       &trans    &trans                                   &trans                         &trans     &trans    &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &trans  &trans        &trans            &trans        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &kp K_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &trans  &trans
-                        &trans  &trans  &trans        &trans  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &trans  &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3     &trans  &trans
+                        &trans  &trans  &trans        &trans  &trans             &trans
             >;
         };
     };
