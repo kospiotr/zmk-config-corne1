@@ -13,7 +13,7 @@
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <400>;
             quick-tap-ms = <400>;
             bindings = <&kp>, <&kp>;
@@ -29,6 +29,7 @@
             bindings = <&shifted>, <&kp>;
 
             quick-tap-ms = <400>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -44,8 +45,6 @@
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
                 <&kp LSHFT>;
-
-            wait-ms = <200>;
         };
 
         as: autoshift {
