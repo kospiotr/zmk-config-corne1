@@ -44,6 +44,8 @@
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
                 <&kp LSHFT>;
+
+            wait-ms = <200>;
         };
 
         as: autoshift {
