@@ -15,10 +15,10 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <400>;
-            quick-tap-ms = <350>;
+            quick-tap-ms = <400>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <1>;    // <---[[the W key]]
+            // <---[[the W key]]
         };
 
         as_ht: autoshift_hold_tap {
@@ -28,7 +28,7 @@
             tapping-term-ms = <400>;
             bindings = <&shifted>, <&kp>;
 
-            quick-tap-ms = <350>;
+            quick-tap-ms = <400>;
         };
     };
 
@@ -99,10 +99,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp F1  &kp F2  &kp F3           &kp F4   &kp F5       &kp PLUS               &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BACKSPACE
-&kp LEFT_SHIFT    &kp F6  &kp F7  &kp F8           &kp F9   &kp F10      &pht MINUS UNDERSCORE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH     &trans
-&kp LEFT_CONTROL  &trans  &trans  &kp PRINTSCREEN  &kp F11  &kp F12      &kp EQUAL              &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp DELETE
-                                  &kp LGUI         &trans   &kp SPACE    &trans                 &kp N0        &kp COMMA
+&kp ESCAPE        &kp F1  &kp F2  &kp F3           &kp F4   &kp F5       &kp PLUS          &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp BACKSPACE
+&kp LEFT_SHIFT    &kp F6  &kp F7  &kp F8           &kp F9   &kp F10      &pht UNDER MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH     &trans
+&kp LEFT_CONTROL  &trans  &trans  &kp PRINTSCREEN  &kp F11  &kp F12      &kp EQUAL         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp DELETE
+                                  &kp LGUI         &trans   &kp SPACE    &trans            &kp N0        &kp COMMA
             >;
         };
 
@@ -114,10 +114,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp EXCL   &kp AT    &kp HASH  &kp DLLR                                 &kp PRCNT                      &pht COLON SEMICOLON   &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &trans         &trans
-&kp LEFT_SHIFT    &kp CARET  &kp AMPS  &kp PIPE  &pht RIGHT_PARENTHESIS LEFT_PARENTHESIS  &pht RIGHT_BRACE LEFT_BRACE    &pht MINUS UNDERSCORE  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
-&kp LEFT_CONTROL  &kp TILDE  &trans    &trans    &pht RIGHT_BRACKET LEFT_BRACKET          &pht GREATER_THAN LESS_THAN    &kp EQUAL              &kp END   &trans          &kp PAGE_DOWN  &kp BACKSLASH  &trans
-                                       &trans    &trans                                   &trans                         &trans                 &trans    &trans
+&kp TAB           &kp EXCL   &kp AT    &kp HASH  &kp DLLR                                 &kp PRCNT                      &pht SEMICOLON COLON  &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &trans         &trans
+&kp LEFT_SHIFT    &kp CARET  &kp AMPS  &kp PIPE  &pht RIGHT_PARENTHESIS LEFT_PARENTHESIS  &pht RIGHT_BRACE LEFT_BRACE    &pht UNDER MINUS      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
+&kp LEFT_CONTROL  &kp TILDE  &trans    &trans    &pht RIGHT_BRACKET LEFT_BRACKET          &pht GREATER_THAN LESS_THAN    &kp EQUAL             &kp END   &trans          &kp PAGE_DOWN  &kp BACKSLASH  &trans
+                                       &trans    &trans                                   &trans                         &trans                &trans    &trans
             >;
         };
 
