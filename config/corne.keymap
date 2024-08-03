@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp F1  &kp F2  &kp F3           &kp F4   &kp F5       &trans  &kp N7        &kp N8        &kp N9        &kp PLUS      &kp MINUS
-&kp LEFT_SHIFT    &kp F6  &kp F7  &kp F8           &kp F9   &kp F10      &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&kp LEFT_CONTROL  &trans  &trans  &kp PRINTSCREEN  &kp F11  &kp F12      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp EQUAL
-                                  &kp LGUI         &trans   &kp SPACE    &trans  &kp N0        &trans
+&kp ESCAPE        &kp F1  &kp F2  &kp F3           &kp F4   &kp F5       &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTERISK  &trans
+&kp LEFT_SHIFT    &kp F6  &kp F7  &kp F8           &kp F9   &kp F10      &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH     &trans
+&kp LEFT_CONTROL  &trans  &trans  &kp PRINTSCREEN  &kp F11  &kp F12      &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &trans
+                                  &kp LGUI         &trans   &kp SPACE    &trans     &kp N0        &kp COMMA
             >;
         };
 
@@ -108,10 +108,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL   &kp AT         &kp HASH      &kp DLLR                                 &kp PRCNT                      &kp COLON             &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &kp AMPERSAND  &kp PIPE
-&kp LCTRL  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &pht LEFT_PARENTHESIS RIGHT_PARENTHESIS  &pht LEFT_BRACE RIGHT_BRACE    &as MINUS             &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp COLON      &kp SLASH
-&kp LSHFT  &kp TILDE  &trans         &trans        &kp EQUAL                                &pht LESS_THAN GREATER_THAN    &pht SLASH BACKSLASH  &kp END   &trans          &kp PAGE_DOWN  &kp BACKSLASH  &kp SLASH
-                                     &kp LGUI      &trans                                   &kp SPACE                      &kp RET               &trans    &kp RALT
+&kp TAB    &kp EXCL   &kp AT    &kp HASH  &kp DLLR                                 &kp PRCNT                      &kp COLON  &kp HOME  &kp UP_ARROW    &kp PAGE_UP    &trans         &trans
+&kp LCTRL  &kp CARET  &kp AMPS  &kp PIPE  &pht LEFT_PARENTHESIS RIGHT_PARENTHESIS  &pht LEFT_BRACE RIGHT_BRACE    &as MINUS  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
+&kp LSHFT  &kp TILDE  &trans    &trans    &pht LEFT_BRACKET RBKT                   &pht LESS_THAN GREATER_THAN    &kp EQUAL  &kp END   &trans          &kp PAGE_DOWN  &kp BACKSLASH  &trans
+                                &trans    &trans                                   &trans                         &trans     &trans    &trans
             >;
         };
     };
