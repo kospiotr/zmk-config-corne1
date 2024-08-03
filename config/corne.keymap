@@ -13,14 +13,11 @@
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             // <---[[the W key]]
-
-            require-prior-idle-ms = <125>;
         };
 
         as_ht: autoshift_hold_tap {
@@ -30,9 +27,7 @@
             tapping-term-ms = <300>;
             bindings = <&shifted>, <&kp>;
 
-            quick-tap-ms = <150>;
-            flavor = "tap-unless-interrupted";
-            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
         };
     };
 
